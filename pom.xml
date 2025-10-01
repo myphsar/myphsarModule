@@ -4,18 +4,12 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <repositories>
-        <repository>
-            <id>flutter_module_repo</id>
-            <url>/Users/sak/StudioProjects/mps/build/host/outputs/repo</url>
-        </repository>
-    </repositories>
 
 
 
     <groupId>io.github.myphsar</groupId>
     <artifactId>flutter_release</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <name>myphsar</name>
     <description>MyPhsar Module.</description>
@@ -47,9 +41,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/sak-coder/mps.git</connection>
-        <developerConnection>scm:git:ssh://github.com/sak-coder/mps.git</developerConnection>
-        <url>https://github.com/sak-coder/mps/tree/master/</url>
+        <connection>scm:git:git://github.com/myphsar/gxs1yikjhm.git</connection>
+        <developerConnection>scm:git:ssh://github.com/myphsar/gxs1yikjhm.git</developerConnection>
+        <url>https://github.com/myphsar/gxs1yikjhm/tree/main/</url>
     </scm>
 
     <properties>
