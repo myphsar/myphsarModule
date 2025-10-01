@@ -9,6 +9,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://storage.googleapis.com/download.flutter.io' }
     }
 }
 
@@ -50,7 +51,7 @@ afterEvaluate {
 
                 groupId = 'io.github.myphsar'
                 artifactId = 'myphsar_module'
-                version = '1.0.0'
+                version = '1.0.5'
 
                 artifact sourceJar
                 artifact javadocJar
