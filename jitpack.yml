@@ -1,4 +1,4 @@
 jdk:
   - openjdk11
 install:
-  - cd android && chmod +x ./gradlew && ./gradlew assembleRelease
+  - cd .android && chmod +x ./gradlew && ./gradlew assembleRelease
