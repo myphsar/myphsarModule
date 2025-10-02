@@ -71,4 +71,63 @@ artifacts {
     archives sourceJar
 }
 
-afterEvaluate
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+             //   from components.release
+
+                groupId = 'io.github.myphsar'
+                artifactId = 'myphsar_module'
+                version = '1.0.5'
+
+                artifact sourceJar
+                artifact javadocJar
+
+                pom {
+                    name = 'Myphar Flutter Module'
+                    description = 'A Flutter module packaged as AAR'
+                    url = 'https://github.com/myphsar/gxs1yikjhm'
+
+                    licenses {
+                        license {
+                            name = 'The Apache License, Version 2.0'
+                            url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+
+                    developers {
+                        developer {
+                            id = 'myphsar'
+                            name = 'sak'
+                            email = 'connecttopiksak@gmail.com'
+                        }
+                    }
+
+                    scm {
+                        connection = 'scm:git:https://github.com/myphsar/gxs1yikjhm.git'
+                        developerConnection = 'scm:git:https://github.com/myphsar/gxs1yikjhm.git'
+                        url = 'https://github.com/myphsar/gxs1yikjhm'
+                    }
+                }
+            }
+        }
+
+        repositories {
+            maven {
+                def releasesRepoUrl = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
+                def snapshotsRepoUrl = "https://s01.oss.sonatype.org/content/repositories/snapshots/"
+                url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
+
+                credentials {
+                    username = "OCkJ2u"
+                    password = "D48sRH7fB6DDLyzaUV6eytpVlDYHxmsP0"
+                }
+            }
+        }
+    }
+
+    signing {
+        sign publishing.publications.release
+    }
+}
