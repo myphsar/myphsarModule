@@ -1,18 +1,18 @@
 jdk:
   - openjdk11
 
-before_install:
-  - wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.13.0-stable.tar.xz
-  - tar xf flutter_linux_3.13.0-stable.tar.xz
-  - export PATH="$PATH:$(pwd)/flutter/bin"
-  - flutter doctor -v
-  - flutter pub get
-
-install:
-  - cd android
-  - chmod +x ./gradlew
-  - ./gradlew clean
-
-script:
-  - cd android
-  - ./gradlew assembleRelease publishToMavenLocal
+#before_install:
+#  - wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.13.0-stable.tar.xz
+#  - tar xf flutter_linux_3.13.0-stable.tar.xz
+#  - export PATH="$PATH:$(pwd)/flutter/bin"
+#  - flutter doctor -v
+#  - flutter pub get
+#
+#install:
+#  - cd android
+#  - chmod +x ./gradlew
+#  - ./gradlew clean
+#
+#script:
+#  - cd android
+#  - ./gradlew assembleRelease publishToMavenLocal
