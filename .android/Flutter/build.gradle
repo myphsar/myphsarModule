@@ -110,6 +110,7 @@ afterEvaluate {
                         url = 'https://github.com/myphsar/gxs1yikjhm'
                     }
                 }
+                //from components.release
             }
         }
 
