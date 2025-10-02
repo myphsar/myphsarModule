@@ -44,6 +44,13 @@ android {
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
     }
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar() // Recommended: publishes source code
+            withJavadocJar() // Recommended: publishes Javadoc
+        }
+    }
 }
 
 
@@ -72,10 +79,11 @@ artifacts {
 }
 
 afterEvaluate {
+
     publishing {
         publications {
             release(MavenPublication) {
-             //   from components.release
+                from components.release
 
                 groupId = 'io.github.myphsar'
                 artifactId = 'myphsar_module'
@@ -84,7 +92,7 @@ afterEvaluate {
                 artifact sourceJar
                 artifact javadocJar
 
-                pom {
+                pom{
                     name = 'Myphar Flutter Module'
                     description = 'A Flutter module packaged as AAR'
                     url = 'https://github.com/myphsar/gxs1yikjhm'
