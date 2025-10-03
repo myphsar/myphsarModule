@@ -73,10 +73,10 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
     from javadoc.destinationDir
 }
 
-artifacts {
-    archives javadocJar
-    archives sourceJar
-}
+//artifacts {
+//    archives javadocJar
+//    archives sourceJar
+//}
 
 afterEvaluate {
 
@@ -89,8 +89,7 @@ afterEvaluate {
                 artifactId = 'myphsar_module'
                 version = '1.0.5'
 
-                artifact sourceJar
-                artifact javadocJar
+
 
                 pom{
                     name = 'Myphar Flutter Module'
