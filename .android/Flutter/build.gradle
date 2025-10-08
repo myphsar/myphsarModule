@@ -68,13 +68,13 @@ task javadoc(type: Javadoc) {
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
 }
 
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    //   classifier = 'javadoc'
-    from javadoc.destinationDir
-}
+//task javadocJar(type: Jar, dependsOn: javadoc) {
+//    //   classifier = 'javadoc'
+//    from javadoc.destinationDir
+//}
 
 artifacts {
-    archives javadocJar
+  //  archives javadocJar
     archives sourceJar
 }
 
@@ -89,10 +89,10 @@ afterEvaluate {
                 artifactId = 'myphsar_module'
                 version = '1.0.5'
 
-                artifact sourceJar
-                artifact javadocJar
+                artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
+                //  artifact javadocJar
 
-                pom{
+                pom {
                     name = 'Myphar Flutter Module'
                     description = 'A Flutter module packaged as AAR'
                     url = 'https://github.com/myphsar/gxs1yikjhm'
@@ -126,7 +126,7 @@ afterEvaluate {
             maven {
                 def releasesRepoUrl = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
                 def snapshotsRepoUrl = "https://s01.oss.sonatype.org/content/repositories/snapshots/"
-                url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
+                url = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
 
                 credentials {
                     username = "OCkJ2u"
@@ -137,6 +137,7 @@ afterEvaluate {
     }
 
     signing {
+        required { gradle.taskGraph.hasTask("publish") }
         sign publishing.publications.release
     }
 }

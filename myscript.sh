@@ -1,5 +1,5 @@
 # Navigate to your target folder
-cd /Users/sak/StudioProjects/mps/build/host/outputs/repo/com/myphsar/myphsar_module/flutter_release/1.0.1
+cd /Users/sak/Desktop/repo/io/github/myphsar/flutter_release/1.0.2
 
 # Sign all .jar files
 for file in *.jar; do
