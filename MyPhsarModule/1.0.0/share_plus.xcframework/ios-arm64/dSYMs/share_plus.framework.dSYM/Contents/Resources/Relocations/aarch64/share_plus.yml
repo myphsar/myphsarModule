@@ -1,11 +1,11 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/sak/StudioProjects/ios_frameworks/Release/iphoneos/Release-iphoneos/share_plus/share_plus.framework/share_plus'
+binary-path:     '/Users/sak/StudioProjects/myphsar_frameworks/Release/iphoneos/Release-iphoneos/share_plus/share_plus.framework/share_plus'
 relocations:
   - { offset: 0x5E09E, size: 0x8, addend: 0x0, symName: _share_plusVersionString, symObjAddr: 0x0, symBinAddr: 0x71C0, symSize: 0x0 }
   - { offset: 0x5E0D3, size: 0x8, addend: 0x0, symName: _share_plusVersionNumber, symObjAddr: 0x28, symBinAddr: 0x71E8, symSize: 0x0 }
   - { offset: 0x5E110, size: 0x8, addend: 0x0, symName: '-[UIActivityViewSuccessCompanion initWithResult:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x78 }
-  - { offset: 0x5E134, size: 0x8, addend: 0x0, symName: _activityTypes, symObjAddr: 0xCB18, symBinAddr: 0x117A0, symSize: 0x0 }
+  - { offset: 0x5E134, size: 0x8, addend: 0x0, symName: _activityTypes, symObjAddr: 0xCB40, symBinAddr: 0x117A0, symSize: 0x0 }
   - { offset: 0x5E28D, size: 0x8, addend: 0x0, symName: '-[UIActivityViewSuccessCompanion initWithResult:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x78 }
   - { offset: 0x5E2D4, size: 0x8, addend: 0x0, symName: '-[UIActivityViewSuccessCompanion dealloc]', symObjAddr: 0x78, symBinAddr: 0x4078, symSize: 0xB4 }
   - { offset: 0x5E336, size: 0x8, addend: 0x0, symName: '-[UIActivityViewSuccessCompanion result]', symObjAddr: 0x12C, symBinAddr: 0x412C, symSize: 0xC }

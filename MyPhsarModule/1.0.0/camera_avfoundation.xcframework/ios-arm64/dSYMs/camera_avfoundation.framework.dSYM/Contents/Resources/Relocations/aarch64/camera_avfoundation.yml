@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/sak/StudioProjects/ios_frameworks/Release/iphoneos/Release-iphoneos/camera_avfoundation/camera_avfoundation.framework/camera_avfoundation'
+binary-path:     '/Users/sak/StudioProjects/myphsar_frameworks/Release/iphoneos/Release-iphoneos/camera_avfoundation/camera_avfoundation.framework/camera_avfoundation'
 relocations:
   - { offset: 0x99074, size: 0x8, addend: 0x0, symName: _camera_avfoundationVersionString, symObjAddr: 0x0, symBinAddr: 0x25AE0, symSize: 0x0 }
   - { offset: 0x990A9, size: 0x8, addend: 0x0, symName: _camera_avfoundationVersionNumber, symObjAddr: 0x38, symBinAddr: 0x25B18, symSize: 0x0 }
@@ -296,8 +296,8 @@ relocations:
   - { offset: 0x9F918, size: 0x8, addend: 0x0, symName: '-[FLTDefaultWritableData .cxx_destruct]', symObjAddr: 0xF4, symBinAddr: 0x7FD0, symSize: 0xC }
   - { offset: 0x9F9E5, size: 0x8, addend: 0x0, symName: '-[FCPPlatformCameraLensDirectionBox initWithValue:]', symObjAddr: 0x0, symBinAddr: 0x7FDC, symSize: 0x48 }
   - { offset: 0x9F9F3, size: 0x8, addend: 0x0, symName: _FCPGetMessagesCodec, symObjAddr: 0x1864, symBinAddr: 0x9840, symSize: 0x30 }
-  - { offset: 0x9FA1B, size: 0x8, addend: 0x0, symName: _FCPGetMessagesCodec.sSharedObject, symObjAddr: 0x20528, symBinAddr: 0x44D10, symSize: 0x0 }
-  - { offset: 0x9FA32, size: 0x8, addend: 0x0, symName: _FCPGetMessagesCodec.sPred, symObjAddr: 0x20530, symBinAddr: 0x44D18, symSize: 0x0 }
+  - { offset: 0x9FA1B, size: 0x8, addend: 0x0, symName: _FCPGetMessagesCodec.sSharedObject, symObjAddr: 0x20540, symBinAddr: 0x44D10, symSize: 0x0 }
+  - { offset: 0x9FA32, size: 0x8, addend: 0x0, symName: _FCPGetMessagesCodec.sPred, symObjAddr: 0x20548, symBinAddr: 0x44D18, symSize: 0x0 }
   - { offset: 0x9FFFB, size: 0x8, addend: 0x0, symName: '-[FCPPlatformCameraLensDirectionBox initWithValue:]', symObjAddr: 0x0, symBinAddr: 0x7FDC, symSize: 0x48 }
   - { offset: 0xA0042, size: 0x8, addend: 0x0, symName: '-[FCPPlatformCameraLensDirectionBox value]', symObjAddr: 0x48, symBinAddr: 0x8024, symSize: 0x8 }
   - { offset: 0xA0079, size: 0x8, addend: 0x0, symName: '-[FCPPlatformCameraLensDirectionBox setValue:]', symObjAddr: 0x50, symBinAddr: 0x802C, symSize: 0x8 }

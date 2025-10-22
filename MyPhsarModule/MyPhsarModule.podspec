@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Sam Piksak' => 'connecttopiksak@gmail.com' }
   
   s.ios.deployment_target = '15.0'
-  s.source           = { 
+  s.source           = {
     :http => 'https://your-repo.com/flutter-modules/MyFlutterModule/1.0.0/MyFlutterModule.zip'
   }
   
@@ -34,5 +34,8 @@ Pod::Spec.new do |s|
     # Add other plugin frameworks your module uses
   ]
   
-  s.preserve_paths = '**/*.xcframework'
+ # s.preserve_paths = '**/*.xcframework'
 end
+
+
+ 

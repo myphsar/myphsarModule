@@ -1,10 +1,10 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/sak/StudioProjects/ios_frameworks/Release/iphoneos/Release-iphoneos/shared_preferences_foundation/shared_preferences_foundation.framework/shared_preferences_foundation'
+binary-path:     '/Users/sak/StudioProjects/myphsar_frameworks/Release/iphoneos/Release-iphoneos/shared_preferences_foundation/shared_preferences_foundation.framework/shared_preferences_foundation'
 relocations:
   - { offset: 0x5EADD, size: 0x8, addend: 0x0, symName: _shared_preferences_foundationVersionString, symObjAddr: 0x0, symBinAddr: 0xE540, symSize: 0x0 }
   - { offset: 0x5EB12, size: 0x8, addend: 0x0, symName: _shared_preferences_foundationVersionNumber, symObjAddr: 0x40, symBinAddr: 0xE580, symSize: 0x0 }
-  - { offset: 0x5EB77, size: 0x8, addend: 0x0, symName: '_$s29shared_preferences_foundation19MessagesPigeonCodecC0A0ACvpZ', symObjAddr: 0x1A558, symBinAddr: 0x1A088, symSize: 0x0 }
+  - { offset: 0x5EB77, size: 0x8, addend: 0x0, symName: '_$s29shared_preferences_foundation19MessagesPigeonCodecC0A0ACvpZ', symObjAddr: 0x1A560, symBinAddr: 0x1A088, symSize: 0x0 }
   - { offset: 0x5EBCA, size: 0x8, addend: 0x0, symName: '_$s29shared_preferences_foundation11PigeonErrorCMa', symObjAddr: 0x3C, symBinAddr: 0x403C, symSize: 0x20 }
   - { offset: 0x5EC0A, size: 0x8, addend: 0x0, symName: '_$s29shared_preferences_foundation9wrapError33_CCD8851934D588835E18C29B514F4159LLySayypSgGypF', symObjAddr: 0x6C, symBinAddr: 0x406C, symSize: 0x36C }
   - { offset: 0x5EDB7, size: 0x8, addend: 0x0, symName: '_$s29shared_preferences_foundation10nilOrValue33_CCD8851934D588835E18C29B514F4159LLyxSgypSglFSS_Tg5', symObjAddr: 0x3D8, symBinAddr: 0x43D8, symSize: 0xF8 }

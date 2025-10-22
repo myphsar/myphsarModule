@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/sak/StudioProjects/ios_frameworks/Release/iphoneos/Release-iphoneos/flutter_inappwebview_ios/flutter_inappwebview_ios.framework/flutter_inappwebview_ios'
+binary-path:     '/Users/sak/StudioProjects/myphsar_frameworks/Release/iphoneos/Release-iphoneos/flutter_inappwebview_ios/flutter_inappwebview_ios.framework/flutter_inappwebview_ios'
 relocations:
   - { offset: 0x8799D, size: 0x8, addend: 0x0, symName: _flutter_inappwebview_iosVersionString, symObjAddr: 0x0, symBinAddr: 0xBA060, symSize: 0x0 }
   - { offset: 0x879D2, size: 0x8, addend: 0x0, symName: _flutter_inappwebview_iosVersionNumber, symObjAddr: 0x38, symBinAddr: 0xBA098, symSize: 0x0 }
@@ -92,7 +92,7 @@ relocations:
   - { offset: 0x894F0, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios18BaseCallbackResultCfd', symObjAddr: 0x0, symBinAddr: 0x5504, symSize: 0x4 }
   - { offset: 0x8952C, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios18BaseCallbackResultCfD', symObjAddr: 0x4, symBinAddr: 0x5508, symSize: 0x1C }
   - { offset: 0x896D6, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios45CALL_ASYNC_JAVASCRIPT_BELOW_IOS_14_WRAPPER_JS_WZ', symObjAddr: 0x0, symBinAddr: 0x5594, symSize: 0x1C0 }
-  - { offset: 0x896FA, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios45CALL_ASYNC_JAVASCRIPT_BELOW_IOS_14_WRAPPER_JSSSvp', symObjAddr: 0x2EA8, symBinAddr: 0x110228, symSize: 0x0 }
+  - { offset: 0x896FA, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios45CALL_ASYNC_JAVASCRIPT_BELOW_IOS_14_WRAPPER_JSSSvp', symObjAddr: 0x2EB8, symBinAddr: 0x110228, symSize: 0x0 }
   - { offset: 0x89734, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios45CALL_ASYNC_JAVASCRIPT_BELOW_IOS_14_WRAPPER_JS_WZ', symObjAddr: 0x0, symBinAddr: 0x5594, symSize: 0x1C0 }
   - { offset: 0x89F8B, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios14CallbackResultCMr', symObjAddr: 0xD7C, symBinAddr: 0x64A4, symSize: 0x50 }
   - { offset: 0x89F9F, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios14CallbackResultCMa', symObjAddr: 0xDCC, symBinAddr: 0x64F4, symSize: 0xC }
@@ -247,8 +247,8 @@ relocations:
   - { offset: 0x90527, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios18ClientCertResponseCfD', symObjAddr: 0x200, symBinAddr: 0xCA10, symSize: 0x30 }
   - { offset: 0x90558, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios18ClientCertResponseC7fromMap3mapACSgSDySSypSgGSg_tFZTf4nd_n', symObjAddr: 0x284, symBinAddr: 0xCA94, symSize: 0x358 }
   - { offset: 0x9087D, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios28CONSOLE_LOG_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0xCE04, symSize: 0xD0 }
-  - { offset: 0x908A1, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios28CONSOLE_LOG_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x2F80, symBinAddr: 0x110238, symSize: 0x0 }
-  - { offset: 0x908FC, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios21CONSOLE_LOG_JS_SOURCESSvp', symObjAddr: 0x2F88, symBinAddr: 0x110240, symSize: 0x0 }
+  - { offset: 0x908A1, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios28CONSOLE_LOG_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x2F88, symBinAddr: 0x110238, symSize: 0x0 }
+  - { offset: 0x908FC, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios21CONSOLE_LOG_JS_SOURCESSvp', symObjAddr: 0x2F90, symBinAddr: 0x110240, symSize: 0x0 }
   - { offset: 0x9091B, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios28CONSOLE_LOG_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0xCE04, symSize: 0xD0 }
   - { offset: 0x90999, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios21CONSOLE_LOG_JS_SOURCE_WZ', symObjAddr: 0xD0, symBinAddr: 0xCED4, symSize: 0xAC }
   - { offset: 0x90D25, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios19ContextMenuSettingsCMa', symObjAddr: 0xA0, symBinAddr: 0xD020, symSize: 0x38 }
@@ -283,7 +283,7 @@ relocations:
   - { offset: 0x920A1, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios18CreateWindowActionCACycfc', symObjAddr: 0x3D4, symBinAddr: 0xD460, symSize: 0x2C }
   - { offset: 0x920FA, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios18CreateWindowActionCACycfcTo', symObjAddr: 0x400, symBinAddr: 0xD48C, symSize: 0x2C }
   - { offset: 0x92159, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios18CreateWindowActionCfD', symObjAddr: 0x42C, symBinAddr: 0xD4B8, symSize: 0x30 }
-  - { offset: 0x9230A, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios18CredentialDatabaseC15credentialStoreSo22NSURLCredentialStorageCvpZ', symObjAddr: 0x13580, symBinAddr: 0x110250, symSize: 0x0 }
+  - { offset: 0x9230A, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios18CredentialDatabaseC15credentialStoreSo22NSURLCredentialStorageCvpZ', symObjAddr: 0x13588, symBinAddr: 0x110250, symSize: 0x0 }
   - { offset: 0x92391, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios18CredentialDatabaseC15credentialStore_WZ', symObjAddr: 0x148, symBinAddr: 0xFB10, symSize: 0x38 }
   - { offset: 0x92566, size: 0x8, addend: 0x0, symName: '_$sSo20NSURLProtectionSpaceCSo8NSObjectCSH10ObjectiveCWl', symObjAddr: 0x30E8, symBinAddr: 0x12A2C, symSize: 0x54 }
   - { offset: 0x92677, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios18CredentialDatabaseCfE', symObjAddr: 0x3A38, symBinAddr: 0x13364, symSize: 0x10 }
@@ -399,15 +399,15 @@ relocations:
   - { offset: 0x989F0, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios20DownloadStartRequestCACycfcTo', symObjAddr: 0x550, symBinAddr: 0x17488, symSize: 0x2C }
   - { offset: 0x98A4F, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios20DownloadStartRequestCfD', symObjAddr: 0x57C, symBinAddr: 0x174B4, symSize: 0x30 }
   - { offset: 0x98BEB, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios38ENABLE_VIEWPORT_SCALE_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x175BC, symSize: 0x84 }
-  - { offset: 0x98C0F, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios38ENABLE_VIEWPORT_SCALE_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x2DC0, symBinAddr: 0x110280, symSize: 0x0 }
-  - { offset: 0x98C29, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios35NOT_ENABLE_VIEWPORT_SCALE_JS_SOURCESSvp', symObjAddr: 0x2DC8, symBinAddr: 0x110288, symSize: 0x0 }
+  - { offset: 0x98C0F, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios38ENABLE_VIEWPORT_SCALE_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x2DD0, symBinAddr: 0x110280, symSize: 0x0 }
+  - { offset: 0x98C29, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios35NOT_ENABLE_VIEWPORT_SCALE_JS_SOURCESSvp', symObjAddr: 0x2DD8, symBinAddr: 0x110288, symSize: 0x0 }
   - { offset: 0x98C37, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios38ENABLE_VIEWPORT_SCALE_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x175BC, symSize: 0x84 }
   - { offset: 0x98C5F, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios38ENABLE_VIEWPORT_SCALE_JS_PLUGIN_SCRIPTAA12PluginScriptCvau', symObjAddr: 0x84, symBinAddr: 0x17640, symSize: 0x40 }
   - { offset: 0x98CA9, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios35NOT_ENABLE_VIEWPORT_SCALE_JS_SOURCE_WZ', symObjAddr: 0xC4, symBinAddr: 0x17680, symSize: 0xAC }
   - { offset: 0x98D76, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios35NOT_ENABLE_VIEWPORT_SCALE_JS_SOURCESSvau', symObjAddr: 0x170, symBinAddr: 0x1772C, symSize: 0x40 }
   - { offset: 0x98F69, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios39FIND_ELEMENTS_AT_POINT_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x1776C, symSize: 0xB0 }
-  - { offset: 0x98F8D, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios39FIND_ELEMENTS_AT_POINT_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x3178, symBinAddr: 0x110298, symSize: 0x0 }
-  - { offset: 0x98FA7, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios32FIND_ELEMENTS_AT_POINT_JS_SOURCESSvp', symObjAddr: 0x3180, symBinAddr: 0x1102A0, symSize: 0x0 }
+  - { offset: 0x98F8D, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios39FIND_ELEMENTS_AT_POINT_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x3188, symBinAddr: 0x110298, symSize: 0x0 }
+  - { offset: 0x98FA7, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios32FIND_ELEMENTS_AT_POINT_JS_SOURCESSvp', symObjAddr: 0x3190, symBinAddr: 0x1102A0, symSize: 0x0 }
   - { offset: 0x98FC6, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios39FIND_ELEMENTS_AT_POINT_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x1776C, symSize: 0xB0 }
   - { offset: 0x9902F, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios32FIND_ELEMENTS_AT_POINT_JS_SOURCE_WZ', symObjAddr: 0xB0, symBinAddr: 0x1781C, symSize: 0xAC }
   - { offset: 0x9958B, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios30FindInteractionChannelDelegateCfE', symObjAddr: 0x11C8, symBinAddr: 0x18A90, symSize: 0x10 }
@@ -448,8 +448,8 @@ relocations:
   - { offset: 0x9BD42, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios23FindInteractionSettingsCACycfcTo', symObjAddr: 0x0, symBinAddr: 0x19E4C, symSize: 0x40 }
   - { offset: 0x9BD7D, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios23FindInteractionSettingsCfD', symObjAddr: 0x40, symBinAddr: 0x19E8C, symSize: 0x34 }
   - { offset: 0x9BF0A, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios36FIND_TEXT_HIGHLIGHT_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x19F34, symSize: 0xD0 }
-  - { offset: 0x9BF2E, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios36FIND_TEXT_HIGHLIGHT_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x7550, symBinAddr: 0x1102B0, symSize: 0x0 }
-  - { offset: 0x9BF48, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios29FIND_TEXT_HIGHLIGHT_JS_SOURCESSvp', symObjAddr: 0x7558, symBinAddr: 0x1102B8, symSize: 0x0 }
+  - { offset: 0x9BF2E, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios36FIND_TEXT_HIGHLIGHT_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x7560, symBinAddr: 0x1102B0, symSize: 0x0 }
+  - { offset: 0x9BF48, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios29FIND_TEXT_HIGHLIGHT_JS_SOURCESSvp', symObjAddr: 0x7568, symBinAddr: 0x1102B8, symSize: 0x0 }
   - { offset: 0x9BF67, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios36FIND_TEXT_HIGHLIGHT_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x19F34, symSize: 0xD0 }
   - { offset: 0x9BFE5, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios29FIND_TEXT_HIGHLIGHT_JS_SOURCE_WZ', symObjAddr: 0xD0, symBinAddr: 0x1A004, symSize: 0x81C }
   - { offset: 0x9D467, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios25FlutterMethodCallDelegateCMa', symObjAddr: 0x50, symBinAddr: 0x1A850, symSize: 0x20 }
@@ -1450,15 +1450,15 @@ relocations:
   - { offset: 0xDECBF, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios20InAppWebViewSettingsC07getRealH03objSDySSypSgGAA0defG0CSg_tF', symObjAddr: 0x1790, symBinAddr: 0x64138, symSize: 0x1DC0 }
   - { offset: 0xE00B5, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios20InAppWebViewSettingsCfD', symObjAddr: 0x3604, symBinAddr: 0x65FAC, symSize: 0x34 }
   - { offset: 0xE0249, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios48createInterceptOnlyAsyncAjaxRequestsPluginScript04onlyG0AA0jK0CSb_tF', symObjAddr: 0x0, symBinAddr: 0x661F4, symSize: 0xFC }
-  - { offset: 0xE026D, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios39INTERCEPT_AJAX_REQUEST_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x6C08, symBinAddr: 0x1103D8, symSize: 0x0 }
-  - { offset: 0xE0287, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios32INTERCEPT_AJAX_REQUEST_JS_SOURCESSvp', symObjAddr: 0x6C10, symBinAddr: 0x1103E0, symSize: 0x0 }
+  - { offset: 0xE026D, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios39INTERCEPT_AJAX_REQUEST_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x6C10, symBinAddr: 0x1103D8, symSize: 0x0 }
+  - { offset: 0xE0287, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios32INTERCEPT_AJAX_REQUEST_JS_SOURCESSvp', symObjAddr: 0x6C18, symBinAddr: 0x1103E0, symSize: 0x0 }
   - { offset: 0xE02A0, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios48createInterceptOnlyAsyncAjaxRequestsPluginScript04onlyG0AA0jK0CSb_tF', symObjAddr: 0x0, symBinAddr: 0x661F4, symSize: 0xFC }
   - { offset: 0xE0330, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios39INTERCEPT_AJAX_REQUEST_JS_PLUGIN_SCRIPTAA12PluginScriptCvau', symObjAddr: 0xFC, symBinAddr: 0x662F0, symSize: 0x40 }
   - { offset: 0xE035F, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios39INTERCEPT_AJAX_REQUEST_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x13C, symBinAddr: 0x66330, symSize: 0xB0 }
   - { offset: 0xE03C8, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios32INTERCEPT_AJAX_REQUEST_JS_SOURCE_WZ', symObjAddr: 0x1EC, symBinAddr: 0x663E0, symSize: 0x3A4 }
   - { offset: 0xE0CCD, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios40INTERCEPT_FETCH_REQUEST_JS_PLUGIN_SCRIPTAA12PluginScriptCvau', symObjAddr: 0x0, symBinAddr: 0x66784, symSize: 0x40 }
-  - { offset: 0xE0CF1, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios40INTERCEPT_FETCH_REQUEST_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x5110, symBinAddr: 0x1103F0, symSize: 0x0 }
-  - { offset: 0xE0D0B, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33INTERCEPT_FETCH_REQUEST_JS_SOURCESSvp', symObjAddr: 0x5118, symBinAddr: 0x1103F8, symSize: 0x0 }
+  - { offset: 0xE0CF1, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios40INTERCEPT_FETCH_REQUEST_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x5120, symBinAddr: 0x1103F0, symSize: 0x0 }
+  - { offset: 0xE0D0B, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33INTERCEPT_FETCH_REQUEST_JS_SOURCESSvp', symObjAddr: 0x5128, symBinAddr: 0x1103F8, symSize: 0x0 }
   - { offset: 0xE0D19, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios40INTERCEPT_FETCH_REQUEST_JS_PLUGIN_SCRIPTAA12PluginScriptCvau', symObjAddr: 0x0, symBinAddr: 0x66784, symSize: 0x40 }
   - { offset: 0xE0D48, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios40INTERCEPT_FETCH_REQUEST_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x40, symBinAddr: 0x667C4, symSize: 0xB0 }
   - { offset: 0xE0DB1, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33INTERCEPT_FETCH_REQUEST_JS_SOURCE_WZ', symObjAddr: 0xF0, symBinAddr: 0x66874, symSize: 0x328 }
@@ -1468,9 +1468,9 @@ relocations:
   - { offset: 0xE164B, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios9ISettingsCACyxGycfcTo', symObjAddr: 0x4C, symBinAddr: 0x66BE8, symSize: 0x20 }
   - { offset: 0xE1665, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios9ISettingsCfD', symObjAddr: 0x6C, symBinAddr: 0x66C08, symSize: 0x4C }
   - { offset: 0xE181E, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios34JAVASCRIPT_BRIDGE_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x66CA0, symSize: 0xD0 }
-  - { offset: 0xE1842, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios34JAVASCRIPT_BRIDGE_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x68D0, symBinAddr: 0x110408, symSize: 0x0 }
-  - { offset: 0xE185C, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios27JAVASCRIPT_BRIDGE_JS_SOURCESSvp', symObjAddr: 0x68D8, symBinAddr: 0x110410, symSize: 0x0 }
-  - { offset: 0xE1876, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios14UTIL_JS_SOURCESSvp', symObjAddr: 0x68E8, symBinAddr: 0x110420, symSize: 0x0 }
+  - { offset: 0xE1842, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios34JAVASCRIPT_BRIDGE_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x68E0, symBinAddr: 0x110408, symSize: 0x0 }
+  - { offset: 0xE185C, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios27JAVASCRIPT_BRIDGE_JS_SOURCESSvp', symObjAddr: 0x68E8, symBinAddr: 0x110410, symSize: 0x0 }
+  - { offset: 0xE1876, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios14UTIL_JS_SOURCESSvp', symObjAddr: 0x68F8, symBinAddr: 0x110420, symSize: 0x0 }
   - { offset: 0xE1895, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios34JAVASCRIPT_BRIDGE_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x66CA0, symSize: 0xD0 }
   - { offset: 0xE1935, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios27JAVASCRIPT_BRIDGE_JS_SOURCE_WZ', symObjAddr: 0xD0, symBinAddr: 0x66D70, symSize: 0x248 }
   - { offset: 0xE1C42, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios14UTIL_JS_SOURCE_WZ', symObjAddr: 0x35C, symBinAddr: 0x66FB8, symSize: 0x318 }
@@ -1502,8 +1502,8 @@ relocations:
   - { offset: 0xE3872, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios16JsPromptResponseCfD', symObjAddr: 0x28C, symBinAddr: 0x680BC, symSize: 0x30 }
   - { offset: 0xE38A3, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios16JsPromptResponseC7fromMap3mapACSgSDySSypSgGSg_tFZTf4nd_n', symObjAddr: 0x338, symBinAddr: 0x68168, symSize: 0x554 }
   - { offset: 0xE3D18, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios45LAST_TOUCHED_ANCHOR_OR_IMAGE_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x686F4, symSize: 0xB0 }
-  - { offset: 0xE3D3C, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios45LAST_TOUCHED_ANCHOR_OR_IMAGE_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x3780, symBinAddr: 0x110430, symSize: 0x0 }
-  - { offset: 0xE3D56, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios38LAST_TOUCHED_ANCHOR_OR_IMAGE_JS_SOURCESSvp', symObjAddr: 0x3788, symBinAddr: 0x110438, symSize: 0x0 }
+  - { offset: 0xE3D3C, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios45LAST_TOUCHED_ANCHOR_OR_IMAGE_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x3790, symBinAddr: 0x110430, symSize: 0x0 }
+  - { offset: 0xE3D56, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios38LAST_TOUCHED_ANCHOR_OR_IMAGE_JS_SOURCESSvp', symObjAddr: 0x3798, symBinAddr: 0x110438, symSize: 0x0 }
   - { offset: 0xE3D75, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios45LAST_TOUCHED_ANCHOR_OR_IMAGE_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x686F4, symSize: 0xB0 }
   - { offset: 0xE3DDE, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios38LAST_TOUCHED_ANCHOR_OR_IMAGE_JS_SOURCE_WZ', symObjAddr: 0xB0, symBinAddr: 0x687A4, symSize: 0x1D8 }
   - { offset: 0xE4317, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios11LeakAvoiderC6handle_6resultySo17FlutterMethodCallC_yypSgctF', symObjAddr: 0x0, symBinAddr: 0x6897C, symSize: 0x80 }
@@ -1514,7 +1514,7 @@ relocations:
   - { offset: 0xE45C5, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios11LeakAvoiderCfDTo', symObjAddr: 0x168, symBinAddr: 0x68AA0, symSize: 0xB8 }
   - { offset: 0xE4661, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios11LeakAvoiderCACycfc', symObjAddr: 0x250, symBinAddr: 0x68B68, symSize: 0x2C }
   - { offset: 0xE46BA, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios11LeakAvoiderCACycfcTo', symObjAddr: 0x27C, symBinAddr: 0x68B94, symSize: 0x2C }
-  - { offset: 0xE48B5, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios15MyCookieManagerC04httpE5StoreSo012WKHTTPCookieH0CvpZ', symObjAddr: 0x1A998, symBinAddr: 0x110448, symSize: 0x0 }
+  - { offset: 0xE48B5, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios15MyCookieManagerC04httpE5StoreSo012WKHTTPCookieH0CvpZ', symObjAddr: 0x1A9A8, symBinAddr: 0x110448, symSize: 0x0 }
   - { offset: 0xE48C3, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios15MyCookieManagerC04httpE5Store_WZ', symObjAddr: 0x0, symBinAddr: 0x68C38, symSize: 0x64 }
   - { offset: 0xE4DED, size: 0x8, addend: 0x0, symName: '_$sSaySo12NSHTTPCookieCGIeghg_So7NSArrayCIeyBhy_TR', symObjAddr: 0x1E20, symBinAddr: 0x6AA14, symSize: 0x6C }
   - { offset: 0xE4E2C, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios15MyCookieManagerCfE', symObjAddr: 0x3F4C, symBinAddr: 0x6CB40, symSize: 0x10 }
@@ -1552,7 +1552,7 @@ relocations:
   - { offset: 0xE7119, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios15MyCookieManagerC13deleteCookies3url4path6domain6resultySS_S2SSgyypSgctFZTf4nnnnd_n', symObjAddr: 0x51C4, symBinAddr: 0x6DDB8, symSize: 0x19C }
   - { offset: 0xE71A9, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios15MyCookieManagerC16deleteAllCookies6resultyyypSgc_tFZTf4nd_n', symObjAddr: 0x5360, symBinAddr: 0x6DF54, symSize: 0x21C }
   - { offset: 0xE7313, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios15MyCookieManagerC6pluginAcA18SwiftFlutterPluginC_tcfCTf4nd_n', symObjAddr: 0x55B8, symBinAddr: 0x6E19C, symSize: 0xF0 }
-  - { offset: 0xE757A, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios19MyWebStorageManagerC16websiteDataStoreSo09WKWebsiteiJ0CvpZ', symObjAddr: 0xC928, symBinAddr: 0x110450, symSize: 0x0 }
+  - { offset: 0xE757A, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios19MyWebStorageManagerC16websiteDataStoreSo09WKWebsiteiJ0CvpZ', symObjAddr: 0xC938, symBinAddr: 0x110450, symSize: 0x0 }
   - { offset: 0xE7588, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios19MyWebStorageManagerC16websiteDataStore_WZ', symObjAddr: 0x0, symBinAddr: 0x6E6B4, symSize: 0x38 }
   - { offset: 0xE79CE, size: 0x8, addend: 0x0, symName: '_$sSaySo19WKWebsiteDataRecordCGIeghg_So7NSArrayCIeyBhy_TR', symObjAddr: 0xCA0, symBinAddr: 0x6F2C0, symSize: 0x6C }
   - { offset: 0xE7A86, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios19MyWebStorageManagerCfE', symObjAddr: 0x120C, symBinAddr: 0x6F82C, symSize: 0x10 }
@@ -1580,24 +1580,24 @@ relocations:
   - { offset: 0xE8D0C, size: 0x8, addend: 0x0, symName: '_$sSo18NSAttributedStringC24flutter_inappwebview_iosE7fromMap3mapABSgSDySSypSgGSg_tFZTf4nd_n', symObjAddr: 0x4, symBinAddr: 0x6FFB4, symSize: 0x1200 }
   - { offset: 0xE95D2, size: 0x8, addend: 0x0, symName: '_$sSo7UIColorCMa', symObjAddr: 0x1344, symBinAddr: 0x711B4, symSize: 0x44 }
   - { offset: 0xE9875, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33ON_LOAD_RESOURCE_JS_PLUGIN_SCRIPTAA12PluginScriptCvau', symObjAddr: 0x0, symBinAddr: 0x711F8, symSize: 0x40 }
-  - { offset: 0xE9899, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33ON_LOAD_RESOURCE_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x3138, symBinAddr: 0x110458, symSize: 0x0 }
-  - { offset: 0xE98B3, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios26ON_LOAD_RESOURCE_JS_SOURCESSvp', symObjAddr: 0x3140, symBinAddr: 0x110460, symSize: 0x0 }
+  - { offset: 0xE9899, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33ON_LOAD_RESOURCE_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x3140, symBinAddr: 0x110458, symSize: 0x0 }
+  - { offset: 0xE98B3, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios26ON_LOAD_RESOURCE_JS_SOURCESSvp', symObjAddr: 0x3148, symBinAddr: 0x110460, symSize: 0x0 }
   - { offset: 0xE98C1, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33ON_LOAD_RESOURCE_JS_PLUGIN_SCRIPTAA12PluginScriptCvau', symObjAddr: 0x0, symBinAddr: 0x711F8, symSize: 0x40 }
   - { offset: 0xE98F0, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33ON_LOAD_RESOURCE_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x40, symBinAddr: 0x71238, symSize: 0xB0 }
   - { offset: 0xE9959, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios26ON_LOAD_RESOURCE_JS_SOURCE_WZ', symObjAddr: 0xF0, symBinAddr: 0x712E8, symSize: 0x138 }
   - { offset: 0xE9D06, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios37ON_WINDOW_BLUR_EVENT_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x71420, symSize: 0xB0 }
-  - { offset: 0xE9D2A, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios37ON_WINDOW_BLUR_EVENT_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x2AE8, symBinAddr: 0x110470, symSize: 0x0 }
-  - { offset: 0xE9D44, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios30ON_WINDOW_BLUR_EVENT_JS_SOURCESSvp', symObjAddr: 0x2AF0, symBinAddr: 0x110478, symSize: 0x0 }
+  - { offset: 0xE9D2A, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios37ON_WINDOW_BLUR_EVENT_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x2AF8, symBinAddr: 0x110470, symSize: 0x0 }
+  - { offset: 0xE9D44, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios30ON_WINDOW_BLUR_EVENT_JS_SOURCESSvp', symObjAddr: 0x2B00, symBinAddr: 0x110478, symSize: 0x0 }
   - { offset: 0xE9D63, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios37ON_WINDOW_BLUR_EVENT_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x71420, symSize: 0xB0 }
   - { offset: 0xE9DCC, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios30ON_WINDOW_BLUR_EVENT_JS_SOURCE_WZ', symObjAddr: 0xB0, symBinAddr: 0x714D0, symSize: 0xAC }
   - { offset: 0xEA06E, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios38ON_WINDOW_FOCUS_EVENT_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x7157C, symSize: 0xA4 }
-  - { offset: 0xEA092, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios38ON_WINDOW_FOCUS_EVENT_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x2A90, symBinAddr: 0x110488, symSize: 0x0 }
-  - { offset: 0xEA0AC, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios31ON_WINDOW_FOCUS_EVENT_JS_SOURCESSvp', symObjAddr: 0x2A98, symBinAddr: 0x110490, symSize: 0x0 }
+  - { offset: 0xEA092, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios38ON_WINDOW_FOCUS_EVENT_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x2A98, symBinAddr: 0x110488, symSize: 0x0 }
+  - { offset: 0xEA0AC, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios31ON_WINDOW_FOCUS_EVENT_JS_SOURCESSvp', symObjAddr: 0x2AA0, symBinAddr: 0x110490, symSize: 0x0 }
   - { offset: 0xEA0CB, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios38ON_WINDOW_FOCUS_EVENT_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x7157C, symSize: 0xA4 }
   - { offset: 0xEA134, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios31ON_WINDOW_FOCUS_EVENT_JS_SOURCE_WZ', symObjAddr: 0xA4, symBinAddr: 0x71620, symSize: 0xAC }
   - { offset: 0xEA3D6, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios50ORIGINAL_VIEWPORT_METATAG_CONTENT_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x716CC, symSize: 0xB0 }
-  - { offset: 0xEA3FA, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios50ORIGINAL_VIEWPORT_METATAG_CONTENT_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x2D30, symBinAddr: 0x1104A0, symSize: 0x0 }
-  - { offset: 0xEA414, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios43ORIGINAL_VIEWPORT_METATAG_CONTENT_JS_SOURCESSvp', symObjAddr: 0x2D38, symBinAddr: 0x1104A8, symSize: 0x0 }
+  - { offset: 0xEA3FA, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios50ORIGINAL_VIEWPORT_METATAG_CONTENT_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x2D38, symBinAddr: 0x1104A0, symSize: 0x0 }
+  - { offset: 0xEA414, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios43ORIGINAL_VIEWPORT_METATAG_CONTENT_JS_SOURCESSvp', symObjAddr: 0x2D40, symBinAddr: 0x1104A8, symSize: 0x0 }
   - { offset: 0xEA433, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios50ORIGINAL_VIEWPORT_METATAG_CONTENT_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x716CC, symSize: 0xB0 }
   - { offset: 0xEA49C, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios43ORIGINAL_VIEWPORT_METATAG_CONTENT_JS_SOURCE_WZ', symObjAddr: 0xB0, symBinAddr: 0x7177C, symSize: 0xE4 }
   - { offset: 0xEA7A7, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios17PermissionRequestC6origin9resources5frameACSS_SayAA11StringOrInt_pGSo11WKFrameInfoCtcfC', symObjAddr: 0x0, symBinAddr: 0x71860, symSize: 0x84 }
@@ -1828,12 +1828,12 @@ relocations:
   - { offset: 0xF35E4, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios16PrintJobSettingsCfD', symObjAddr: 0x2154, symBinAddr: 0x7902C, symSize: 0x34 }
   - { offset: 0xF3665, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios16PrintJobSettingsC5parse8settingsACSDySSypSgG_tFTf4nn_g', symObjAddr: 0x330C, symBinAddr: 0x7A174, symSize: 0x230 }
   - { offset: 0xF3984, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios22PRINT_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x7A3AC, symSize: 0xB0 }
-  - { offset: 0xF39A8, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios22PRINT_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x2A40, symBinAddr: 0x1104B8, symSize: 0x0 }
-  - { offset: 0xF39C2, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios15PRINT_JS_SOURCESSvp', symObjAddr: 0x2A48, symBinAddr: 0x1104C0, symSize: 0x0 }
+  - { offset: 0xF39A8, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios22PRINT_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x2A50, symBinAddr: 0x1104B8, symSize: 0x0 }
+  - { offset: 0xF39C2, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios15PRINT_JS_SOURCESSvp', symObjAddr: 0x2A58, symBinAddr: 0x1104C0, symSize: 0x0 }
   - { offset: 0xF39E1, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios22PRINT_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x7A3AC, symSize: 0xB0 }
   - { offset: 0xF3A4A, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios15PRINT_JS_SOURCE_WZ', symObjAddr: 0xB0, symBinAddr: 0x7A45C, symSize: 0xB0 }
   - { offset: 0xF3CEC, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33PROMISE_POLYFILL_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x7A50C, symSize: 0x80 }
-  - { offset: 0xF3D10, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33PROMISE_POLYFILL_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x5B48, symBinAddr: 0x1104D0, symSize: 0x0 }
+  - { offset: 0xF3D10, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33PROMISE_POLYFILL_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x5B50, symBinAddr: 0x1104D0, symSize: 0x0 }
   - { offset: 0xF3D1E, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33PROMISE_POLYFILL_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x0, symBinAddr: 0x7A50C, symSize: 0x80 }
   - { offset: 0xF4059, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios28PullToRefreshChannelDelegateCfE', symObjAddr: 0xDE8, symBinAddr: 0x7B320, symSize: 0x10 }
   - { offset: 0xF4086, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios28PullToRefreshChannelDelegateCfETo', symObjAddr: 0xE98, symBinAddr: 0x7B3D0, symSize: 0x10 }
@@ -2014,8 +2014,8 @@ relocations:
   - { offset: 0xFBC0A, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios8SslErrorCACycfcTo', symObjAddr: 0x360, symBinAddr: 0x803B0, symSize: 0x2C }
   - { offset: 0xFBC69, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios8SslErrorCfD', symObjAddr: 0x38C, symBinAddr: 0x803DC, symSize: 0x30 }
   - { offset: 0xFBDFB, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33NOT_SUPPORT_ZOOM_JS_PLUGIN_SCRIPTAA12PluginScriptCvau', symObjAddr: 0x0, symBinAddr: 0x80448, symSize: 0x40 }
-  - { offset: 0xFBE1F, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33NOT_SUPPORT_ZOOM_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x2D98, symBinAddr: 0x1104D8, symSize: 0x0 }
-  - { offset: 0xFBE39, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios22SUPPORT_ZOOM_JS_SOURCESSvp', symObjAddr: 0x2DA0, symBinAddr: 0x1104E0, symSize: 0x0 }
+  - { offset: 0xFBE1F, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33NOT_SUPPORT_ZOOM_JS_PLUGIN_SCRIPTAA12PluginScriptCvp', symObjAddr: 0x2DA8, symBinAddr: 0x1104D8, symSize: 0x0 }
+  - { offset: 0xFBE39, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios22SUPPORT_ZOOM_JS_SOURCESSvp', symObjAddr: 0x2DB0, symBinAddr: 0x1104E0, symSize: 0x0 }
   - { offset: 0xFBE47, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33NOT_SUPPORT_ZOOM_JS_PLUGIN_SCRIPTAA12PluginScriptCvau', symObjAddr: 0x0, symBinAddr: 0x80448, symSize: 0x40 }
   - { offset: 0xFBE65, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios22SUPPORT_ZOOM_JS_SOURCESSvau', symObjAddr: 0x40, symBinAddr: 0x80488, symSize: 0x40 }
   - { offset: 0xFBE83, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33NOT_SUPPORT_ZOOM_JS_PLUGIN_SCRIPT_WZ', symObjAddr: 0x80, symBinAddr: 0x804C8, symSize: 0x84 }
@@ -2082,7 +2082,7 @@ relocations:
   - { offset: 0x102066, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios10UserScriptCACycfcTo', symObjAddr: 0x7C0, symBinAddr: 0x857EC, symSize: 0x2C }
   - { offset: 0x1020C5, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios10UserScriptCfD', symObjAddr: 0x7EC, symBinAddr: 0x85818, symSize: 0x30 }
   - { offset: 0x10210D, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios10UserScriptC7fromMap3map8windowIdACSgSDySSypSgGSg_s5Int64VSgtFZTf4nnd_n', symObjAddr: 0x858, symBinAddr: 0x85884, symSize: 0x6D8 }
-  - { offset: 0x102596, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios29SharedLastTouchPointTimestampSDyAA12InAppWebViewCs5Int64VGvp', symObjAddr: 0x15BC0, symBinAddr: 0x1104F0, symSize: 0x0 }
+  - { offset: 0x102596, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios29SharedLastTouchPointTimestampSDyAA12InAppWebViewCs5Int64VGvp', symObjAddr: 0x15BC8, symBinAddr: 0x1104F0, symSize: 0x0 }
   - { offset: 0x10280C, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios29SharedLastTouchPointTimestamp_WZ', symObjAddr: 0x24C, symBinAddr: 0x86228, symSize: 0x24 }
   - { offset: 0x10296F, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV20_consumeAndCreateNewAByxGyFSo15NSURLCredentialC_Tg5', symObjAddr: 0xAD0, symBinAddr: 0x86A94, symSize: 0x50 }
   - { offset: 0x1029CF, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV20_consumeAndCreateNewAByxGyFSS_Tg5', symObjAddr: 0xB20, symBinAddr: 0x86AE4, symSize: 0x14 }
@@ -2297,7 +2297,7 @@ relocations:
   - { offset: 0x111E11, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33WebMessageListenerChannelDelegateCfDTo', symObjAddr: 0xA64, symBinAddr: 0x93B94, symSize: 0x24 }
   - { offset: 0x111E43, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios33WebMessageListenerChannelDelegateC7channelACSo013FlutterMethodG0C_tcfC', symObjAddr: 0xA98, symBinAddr: 0x93BC8, symSize: 0x2C }
   - { offset: 0x11204D, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios30WEB_MESSAGE_LISTENER_JS_SOURCE_WZ', symObjAddr: 0x0, symBinAddr: 0x93C9C, symSize: 0x148 }
-  - { offset: 0x112071, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios30WEB_MESSAGE_LISTENER_JS_SOURCESSvp', symObjAddr: 0x3628, symBinAddr: 0x110520, symSize: 0x0 }
+  - { offset: 0x112071, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios30WEB_MESSAGE_LISTENER_JS_SOURCESSvp', symObjAddr: 0x3630, symBinAddr: 0x110520, symSize: 0x0 }
   - { offset: 0x1120AB, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios30WEB_MESSAGE_LISTENER_JS_SOURCE_WZ', symObjAddr: 0x0, symBinAddr: 0x93C9C, symSize: 0x148 }
   - { offset: 0x1128B6, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios14WebMessagePortCfETo', symObjAddr: 0x142C, symBinAddr: 0x95210, symSize: 0x50 }
   - { offset: 0x112906, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios14WebMessagePortCMa', symObjAddr: 0x1738, symBinAddr: 0x954FC, symSize: 0x20 }
@@ -2457,7 +2457,7 @@ relocations:
   - { offset: 0x11D596, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios16WebViewTransportCACycfcTo', symObjAddr: 0x4C, symBinAddr: 0xA3B34, symSize: 0x2C }
   - { offset: 0x11D5F5, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios16WebViewTransportCfD', symObjAddr: 0x78, symBinAddr: 0xA3B60, symSize: 0x34 }
   - { offset: 0x11D782, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios30WINDOW_ID_INITIALIZE_JS_SOURCE_WZ', symObjAddr: 0x0, symBinAddr: 0xA3CA8, symSize: 0x114 }
-  - { offset: 0x11D7A6, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios30WINDOW_ID_INITIALIZE_JS_SOURCESSvp', symObjAddr: 0x25F0, symBinAddr: 0x110568, symSize: 0x0 }
+  - { offset: 0x11D7A6, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios30WINDOW_ID_INITIALIZE_JS_SOURCESSvp', symObjAddr: 0x25F8, symBinAddr: 0x110568, symSize: 0x0 }
   - { offset: 0x11D7E0, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios30WINDOW_ID_INITIALIZE_JS_SOURCE_WZ', symObjAddr: 0x0, symBinAddr: 0xA3CA8, symSize: 0x114 }
   - { offset: 0x11DB01, size: 0x8, addend: 0x0, symName: '_$sSo14WKContentWorldC24flutter_inappwebview_iosE7fromMap3map8windowIdABSgSDySSypSgGSg_s5Int64VSgtFZ', symObjAddr: 0x0, symBinAddr: 0xA3DBC, symSize: 0x8 }
   - { offset: 0x11DB25, size: 0x8, addend: 0x0, symName: '_$sSo14WKContentWorldC24flutter_inappwebview_iosE9_windowId33_B1B506265F3EB2A10183144E6A6064DCLLSDySSs5Int64VSgGvpZ', symObjAddr: 0x5A0, symBinAddr: 0x10DCD8, symSize: 0x0 }
@@ -2473,7 +2473,7 @@ relocations:
   - { offset: 0x11E8F6, size: 0x8, addend: 0x0, symName: '_$sSo20WKNavigationResponseC24flutter_inappwebview_iosE5toMapSDySSypSgGyF', symObjAddr: 0x0, symBinAddr: 0xA4988, symSize: 0x16C }
   - { offset: 0x11E994, size: 0x8, addend: 0x0, symName: '_$sSo20WKNavigationResponseC24flutter_inappwebview_iosE5toMapSDySSypSgGyF', symObjAddr: 0x0, symBinAddr: 0xA4988, symSize: 0x16C }
   - { offset: 0x11EC10, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios20WKProcessPoolManagerC013sharedProcessE0_WZ', symObjAddr: 0x0, symBinAddr: 0xA4AF4, symSize: 0x30 }
-  - { offset: 0x11EC34, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios20WKProcessPoolManagerC013sharedProcessE0So0dE0CvpZ', symObjAddr: 0x24D8, symBinAddr: 0x110578, symSize: 0x0 }
+  - { offset: 0x11EC34, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios20WKProcessPoolManagerC013sharedProcessE0So0dE0CvpZ', symObjAddr: 0x24E8, symBinAddr: 0x110578, symSize: 0x0 }
   - { offset: 0x11EC42, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios20WKProcessPoolManagerC013sharedProcessE0_WZ', symObjAddr: 0x0, symBinAddr: 0xA4AF4, symSize: 0x30 }
   - { offset: 0x11EC88, size: 0x8, addend: 0x0, symName: '_$s24flutter_inappwebview_ios20WKProcessPoolManagerCMa', symObjAddr: 0x48, symBinAddr: 0xA4B24, symSize: 0x20 }
   - { offset: 0x11EE6A, size: 0x8, addend: 0x0, symName: '_$sSo16WKSecurityOriginC24flutter_inappwebview_iosE5toMapSDySSypSgGyF', symObjAddr: 0x0, symBinAddr: 0xA4B50, symSize: 0x170 }

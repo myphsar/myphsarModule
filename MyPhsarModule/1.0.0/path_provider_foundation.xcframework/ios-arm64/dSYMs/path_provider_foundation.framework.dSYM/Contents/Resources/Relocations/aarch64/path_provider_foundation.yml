@@ -1,10 +1,10 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/sak/StudioProjects/ios_frameworks/Release/iphoneos/Release-iphoneos/path_provider_foundation/path_provider_foundation.framework/path_provider_foundation'
+binary-path:     '/Users/sak/StudioProjects/myphsar_frameworks/Release/iphoneos/Release-iphoneos/path_provider_foundation/path_provider_foundation.framework/path_provider_foundation'
 relocations:
   - { offset: 0x5E397, size: 0x8, addend: 0x0, symName: _path_provider_foundationVersionString, symObjAddr: 0x0, symBinAddr: 0x7FB0, symSize: 0x0 }
   - { offset: 0x5E3CC, size: 0x8, addend: 0x0, symName: _path_provider_foundationVersionNumber, symObjAddr: 0x38, symBinAddr: 0x7FE8, symSize: 0x0 }
-  - { offset: 0x5E431, size: 0x8, addend: 0x0, symName: '_$s24path_provider_foundation19MessagesPigeonCodecC6sharedACvpZ', symObjAddr: 0xB128, symBinAddr: 0x11BA0, symSize: 0x0 }
+  - { offset: 0x5E431, size: 0x8, addend: 0x0, symName: '_$s24path_provider_foundation19MessagesPigeonCodecC6sharedACvpZ', symObjAddr: 0xB130, symBinAddr: 0x11BA0, symSize: 0x0 }
   - { offset: 0x5E484, size: 0x8, addend: 0x0, symName: '_$s24path_provider_foundation11PigeonErrorCMa', symObjAddr: 0x3C, symBinAddr: 0x403C, symSize: 0x20 }
   - { offset: 0x5E498, size: 0x8, addend: 0x0, symName: '_$s24path_provider_foundation10nilOrValue33_7EDA05D020E1F315CC375C7C1D72F461LLyxSgypSglFSi_Tg5', symObjAddr: 0x6C, symBinAddr: 0x406C, symSize: 0xEC }
   - { offset: 0x5E6F6, size: 0x8, addend: 0x0, symName: '_$s24path_provider_foundation25MessagesPigeonCodecReader33_7EDA05D020E1F315CC375C7C1D72F461LLCMa', symObjAddr: 0x57C, symBinAddr: 0x457C, symSize: 0x20 }
