@@ -36,7 +36,7 @@ class _SellerItemBannerViewState extends State<SellerItemBannerView> {
     return Container(
         padding: const EdgeInsets.only(left: 5, right: 5),
         child: Obx(() => ListView.builder(
-              itemCount: Get.find<SellerController>().getAllSearchSellerModel.length,
+              itemCount: Get.find<SellerController>().getSellerItemModel.length,
               padding: const EdgeInsets.only(bottom: 5),
               physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
@@ -44,7 +44,7 @@ class _SellerItemBannerViewState extends State<SellerItemBannerView> {
                 return Padding(
                     padding: const EdgeInsets.all(5),
                     child: SellerItemWidget(
-                      allSellerModel: Get.find<SellerController>().getAllSearchSellerModel[index],
+                      allSellerModel: Get.find<SellerController>().getSellerItemModel[index],
                     ));
               },
             )));

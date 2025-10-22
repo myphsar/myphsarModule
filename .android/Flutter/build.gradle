@@ -3,8 +3,6 @@
 plugins {
     id "com.android.library"
     id "dev.flutter.flutter-gradle-plugin"
-    id "maven-publish"
-    id "signing"
 }
 
 def localProperties = new Properties()
@@ -44,100 +42,9 @@ android {
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
     }
-
-    publishing {
-        singleVariant('release') {
-            withSourcesJar() // Recommended: publishes source code
-            withJavadocJar() // Recommended: publishes Javadoc
-        }
-    }
 }
 
 
 flutter {
     source = "../.."
-}
-
-task sourceJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-//    classifier "sources"
-}
-
-task javadoc(type: Javadoc) {
-    source = android.sourceSets.main.java.srcDirs
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-}
-
-//task javadocJar(type: Jar, dependsOn: javadoc) {
-//    //   classifier = 'javadoc'
-//    from javadoc.destinationDir
-//}
-
-artifacts {
-  //  archives javadocJar
-    archives sourceJar
-}
-
-afterEvaluate {
-
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = 'io.github.myphsar'
-                artifactId = 'myphsar_module'
-                version = '1.0.5'
-
-                artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
-                //  artifact javadocJar
-
-                pom {
-                    name = 'Myphar Flutter Module'
-                    description = 'A Flutter module packaged as AAR'
-                    url = 'https://github.com/myphsar/gxs1yikjhm'
-
-                    licenses {
-                        license {
-                            name = 'The Apache License, Version 2.0'
-                            url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
-                        }
-                    }
-
-                    developers {
-                        developer {
-                            id = 'myphsar'
-                            name = 'sak'
-                            email = 'connecttopiksak@gmail.com'
-                        }
-                    }
-
-                    scm {
-                        connection = 'scm:git:https://github.com/myphsar/gxs1yikjhm.git'
-                        developerConnection = 'scm:git:https://github.com/myphsar/gxs1yikjhm.git'
-                        url = 'https://github.com/myphsar/gxs1yikjhm'
-                    }
-                }
-                //from components.release
-            }
-        }
-
-        repositories {
-            maven {
-                def releasesRepoUrl = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
-                def snapshotsRepoUrl = "https://s01.oss.sonatype.org/content/repositories/snapshots/"
-                url = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
-
-                credentials {
-                    username = "OCkJ2u"
-                    password = "D48sRH7fB6DDLyzaUV6eytpVlDYHxmsP0"
-                }
-            }
-        }
-    }
-
-    signing {
-        required { gradle.taskGraph.hasTask("publish") }
-        sign publishing.publications.release
-    }
 }

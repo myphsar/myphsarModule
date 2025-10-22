@@ -100,64 +100,64 @@ class _ProductDetailViewState extends State<ProductDetailView> with SingleTicker
     // List<Widget> detailTap = [DetailTap(), ReviewTap()];
     return  CustomScaffoldRefreshIndicator(
 
-          appBar: customAppBarView(
-              elevation: 0,
-              context: context,
-              titleText: '',
-              flexibleSpace: Padding(
-                padding: const EdgeInsets.only(right: 20),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    customImageButton(
-                        padding: 10,
-                        width: 45,
-                        radius: 5,
-                        height: 45,
-                        onTap: () async {
-                          await SharePlus.instance.share(ShareParams(title:widget._product.name,text: Get.find<ProductDetailController>().shareLink.value.toString()));
-                        },
-                        blur: 0,
-                        icon: Image.asset(
-                          "assets/images/share_ic.png",
-                          width: 21,
-                          height: 20,
-                        )),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Obx(() => badgeIcon(
-                        topP: -2,
-                        endP: -2,
-                        visibleBadge: Get.find<HomeController>().cartCount > 0 ? true : false,
-                        context: context,
-                        badgeText: Get.find<HomeController>().cartCount.toString(),
-                        imageIcon: customImageButton(
-                          padding: 11,
-                          radius: 5,
-                          width: 45,
-                          height: 45,
-                          onTap: () {
-                            if (!Get.find<AuthController>().isSignIn()) {
-                              signInDialogView(context);
-                            } else {
-                              Get.to(() => const CartListView());
-                            }
-                          },
-                          blur: 0,
-                          icon: Image.asset(
-                            "assets/images/basket_ic.png",
-                            width: 24,
-                            height: 24,
-                          ),
-                        )))
-                  ],
+      appBar: customAppBarView(
+          elevation: 0,
+          context: context,
+          titleText: '',
+          flexibleSpace: Padding(
+            padding: const EdgeInsets.only(right: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                customImageButton(
+                    padding: 10,
+                    width: 45,
+                    radius: 5,
+                    height: 45,
+                    onTap: () async {
+                      await Share.share(Get.find<ProductDetailController>().shareLink.value);
+                    },
+                    blur: 0,
+                    icon: Image.asset(
+                      "assets/images/share_ic.png",
+                      width: 21,
+                      height: 20,
+                    )),
+                const SizedBox(
+                  width: 10,
                 ),
-              )),
-          body: Column(
-            children: [
-              Expanded(
-                  child: SingleChildScrollView(
+                Obx(() => badgeIcon(
+                    topP: -2,
+                    endP: -2,
+                    visibleBadge: Get.find<HomeController>().cartCount > 0 ? true : false,
+                    context: context,
+                    badgeText: Get.find<HomeController>().cartCount.toString(),
+                    imageIcon: customImageButton(
+                      padding: 11,
+                      radius: 5,
+                      width: 45,
+                      height: 45,
+                      onTap: () {
+                        if (!Get.find<AuthController>().isSignIn()) {
+                          signInDialogView(context);
+                        } else {
+                          Get.to(() => const CartListView());
+                        }
+                      },
+                      blur: 0,
+                      icon: Image.asset(
+                        "assets/images/basket_ic.png",
+                        width: 24,
+                        height: 24,
+                      ),
+                    )))
+              ],
+            ),
+          )),
+      body: Column(
+        children: [
+          Expanded(
+              child: SingleChildScrollView(
                 controller: scrollController,
                 child: Container(
 
@@ -167,177 +167,175 @@ class _ProductDetailViewState extends State<ProductDetailView> with SingleTicker
                     children: [
                       widget._product.images!.length > 0
                           ? SizedBox(
-                              height: 370.0,
-                              width: MediaQuery.of(context).size.width,
-                              child: Stack(children: [
-                                PageView.builder(
-                                  controller: pageController,
-                                  itemCount: widget._product.images!.length,
-                                  itemBuilder: (context, index) {
-                                    return InkWell(
-                                      onTap: () {
-                                        Get.to(() => FullPhotoView(
-                                            '${Get.find<ConfigController>().configModel.baseUrls!.baseProductImageUrl}'
+                          height: 370.0,
+                          width: MediaQuery.of(context).size.width,
+                          child: Stack(children: [
+                            PageView.builder(
+                              controller: pageController,
+                              itemCount: widget._product.images!.length,
+                              itemBuilder: (context, index) {
+                                return InkWell(
+                                  onTap: () {
+                                    Get.to(() => FullPhotoView(
+                                        '${Get.find<ConfigController>().configModel.baseUrls!.baseProductImageUrl}'
                                             '/${widget._product.images![index]}'));
-                                      },
-                                      child: Padding(
-                                        padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-                                        child: ExtendedImage.network(
-                                          '${Get.find<ConfigController>().configModel.baseUrls!.baseProductImageUrl}/${widget._product.images![index]}',
-                                          width: MediaQuery.of(context).size.width,
-                                          fit: BoxFit.fitHeight,
-                                          cache: false,
-                                        enableLoadState: true,
-                                        //  enableMemoryCache: false,
-                                          loadStateChanged: (ExtendedImageState state) {
-                                            switch (state.extendedImageLoadState) {
-                                              case LoadState.failed:
-                                                return GestureDetector(
-                                                  child: Stack(
-                                                    fit: StackFit.expand,
-                                                    children: <Widget>[
-                                                      Image.asset(
-                                                        "assets/images/placeholder_img.png",
-                                                        fit: BoxFit.fitHeight,
-                                                      ),
-                                                      Center(
-                                                        child: customImageTextButton(
-                                                            blur: 1,
-                                                            text: textView12(context: context, text: "Reload"),
-                                                            height: 50,
-                                                            width: 100,
-                                                            onTap: () {
-                                                              state.reLoadImage();
-                                                            },
-                                                            icon: const Icon(
-                                                              Icons.refresh,
-                                                              color: ColorResource.primaryColor,
-                                                            )),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                );
-                                              case LoadState.loading:
-                                                // TODO: Handle this case.
-                                                break;
-                                              case LoadState.completed:
-                                                // TODO: Handle this case.
-                                                break;
-                                            }
-                                            return null;
-                                          },
-                                        ),
-                                      ),
-                                    );
                                   },
-                                  onPageChanged: (index) {
-                                    setState(() {
-                                      imageIndex = index;
-                                    });
-                                  },
-                                ),
-                                Align(
-                                  alignment: Alignment.bottomLeft,
-                                  child: Container(
-                                      margin: const EdgeInsets.only(bottom: 20),
-                                      height: 10,
-                                      width: MediaQuery.of(context).size.width,
-                                      alignment: Alignment.center,
-                                      child: dotAnimation(imageIndex, widget._product.images!.length)),
-                                ),
-                                Align(
-                                  alignment: Alignment.bottomRight,
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.end,
-                                    children: [
-                                      Padding(
-                                        padding: const EdgeInsets.only(right: 10, bottom: 20),
-                                        child: customImageButton(
-                                            padding: 5,
-                                            width: 40,
-                                            height: 40,
-                                            onTap: () => {
-                                                  if (Get.find<AuthController>().isSignIn())
-                                                    {
-                                                      Get.find<WishlistController>()
-                                                          .addWishlist(context, widget._product.id.toString())
-                                                    }
-                                                  else
-                                                    {signInDialogView(context)}
-                                                },
-                                            icon: Image.asset(
-                                              "assets/images/love_ic.png",
-                                              width: 24,
-                                              height: 24,
+                                  child: ExtendedImage.network(
+                                    '${Get.find<ConfigController>().configModel.baseUrls!.baseProductImageUrl}/${widget._product.images![index]}',
+                                    width: MediaQuery.of(context).size.width,
+                                    fit: BoxFit.cover,
+                                    cache: false,
+                                    enableLoadState: true,
+                                    //  enableMemoryCache: false,
+                                    loadStateChanged: (ExtendedImageState state) {
+                                      switch (state.extendedImageLoadState) {
+                                        case LoadState.failed:
+                                          return GestureDetector(
+                                            child: Stack(
+                                              fit: StackFit.expand,
+                                              children: <Widget>[
+                                                Image.asset(
+                                                  "assets/images/placeholder_img.png",
+                                                  fit: BoxFit.fitHeight,
+                                                ),
+                                                Center(
+                                                  child: customImageTextButton(
+                                                      blur: 1,
+                                                      text: textView12(context: context, text: "Reload"),
+                                                      height: 50,
+                                                      width: 100,
+                                                      onTap: () {
+                                                        state.reLoadImage();
+                                                      },
+                                                      icon: const Icon(
+                                                        Icons.refresh,
+                                                        color: ColorResource.primaryColor,
+                                                      )),
+                                                ),
+                                              ],
                                             ),
-                                            blur: 3),
-                                      ),
-                                    ],
+                                          );
+                                        case LoadState.loading:
+                                        // TODO: Handle this case.
+                                          break;
+                                        case LoadState.completed:
+                                        // TODO: Handle this case.
+                                          break;
+                                      }
+                                      return null;
+                                    },
                                   ),
-                                ),
-                              ]))
+
+                                );
+                              },
+                              onPageChanged: (index) {
+                                setState(() {
+                                  imageIndex = index;
+                                });
+                              },
+                            ),
+                            Align(
+                              alignment: Alignment.bottomLeft,
+                              child: Container(
+                                  margin: const EdgeInsets.only(bottom: 20),
+                                  height: 10,
+                                  width: MediaQuery.of(context).size.width,
+                                  alignment: Alignment.center,
+                                  child: dotAnimation(imageIndex, widget._product.images!.length)),
+                            ),
+                            Align(
+                              alignment: Alignment.bottomRight,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 10, bottom: 20),
+                                    child: customImageButton(
+                                        padding: 5,
+                                        width: 40,
+                                        height: 40,
+                                        onTap: () => {
+                                          if (Get.find<AuthController>().isSignIn())
+                                            {
+                                              Get.find<WishlistController>()
+                                                  .addWishlist(context, widget._product.id.toString())
+                                            }
+                                          else
+                                            {signInDialogView(context)}
+                                        },
+                                        icon: Image.asset(
+                                          "assets/images/love_ic.png",
+                                          width: 24,
+                                          height: 24,
+                                        ),
+                                        blur: 3),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ]))
                           : const SizedBox.shrink(),
 
                       widget._product.images!.isNotEmpty
                           ? Container(
-                              height: 60,
-                              alignment: Alignment.center,
-                              child: ListView.builder(
-                                itemCount: widget._product.images!.length,
-                                scrollDirection: Axis.horizontal,
-                                shrinkWrap: true,
-                                itemBuilder: (context, index) {
-                                  return GestureDetector(
-                                    onTap: () {
-                                      pageController.animateToPage(index,
-                                          duration: const Duration(microseconds: 300), curve: Curves.easeInOut);
-                                    },
-                                    child: Container(
-                                      width: 60,
-                                      margin: const EdgeInsets.symmetric(horizontal: 5),
-                                      decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(1),
-                                          color: Theme.of(context).highlightColor,
-                                          border: Border.all(
-                                              color:
-                                                  imageIndex == index ? ColorResource.primaryColor : Colors.transparent,
-                                              width: 2)),
-                                      child: FadeInImage.assetNetwork(
-                                        placeholder: "assets/images/placeholder_img.png",
-                                        fit: BoxFit.contain,
-                                        image: widget._product.images!.length > 0
-                                            ? '${Get.find<ConfigController>().configModel.baseUrls!.baseProductImageUrl}'
-                                                '/${widget._product.images![index]}'
-                                            : '',
-                                        imageErrorBuilder: (c, o, s) =>
-                                            Image.asset("assets/images/placeholder_img.png", fit: BoxFit.contain),
-                                      ),
-                                    ),
-                                  );
+                          height: 60,
+                          alignment: Alignment.center,
+                          child: ListView.builder(
+                            itemCount: widget._product.images!.length,
+                            scrollDirection: Axis.horizontal,
+                            shrinkWrap: true,
+                            itemBuilder: (context, index) {
+                              return GestureDetector(
+                                onTap: () {
+                                  pageController.animateToPage(index,
+                                      duration: const Duration(microseconds: 300), curve: Curves.easeInOut);
                                 },
-                              ))
+                                child: Container(
+                                  width: 60,
+                                  margin: const EdgeInsets.symmetric(horizontal: 5),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(1),
+                                      color: Theme.of(context).highlightColor,
+                                      border: Border.all(
+                                          color:
+                                          imageIndex == index ? ColorResource.primaryColor : Colors.transparent,
+                                          width: 2)),
+                                  child: FadeInImage.assetNetwork(
+                                    placeholder: "assets/images/placeholder_img.png",
+                                    fit: BoxFit.contain,
+                                    image: widget._product.images!.length > 0
+                                        ? '${Get.find<ConfigController>().configModel.baseUrls!.baseProductImageUrl}'
+                                        '/${widget._product.images![index]}'
+                                        : '',
+                                    imageErrorBuilder: (c, o, s) =>
+                                        Image.asset("assets/images/placeholder_img.png", fit: BoxFit.contain),
+                                  ),
+                                ),
+                              );
+                            },
+                          ))
                           : const SizedBox.shrink(),
 
                       widget._product.videoUrl != null
                           ? Container(
-                              margin: const EdgeInsets.all(5),
-                              padding: const EdgeInsets.all(2),
-                              decoration: customDecoration(
-                                radius: 4,
-                                color: ColorResource.primaryColor,
-                              ),
-                              child: Text(
-                                textAlign: TextAlign.start,
-                                maxLines: 10,
-                                overflow: TextOverflow.ellipsis,
-                                widget._product.videoUrl.toString(),
-                                style: const TextStyle(
-                                    letterSpacing: 0.1,
-                                    fontSize: 13,
-                                    color: ColorResource.whiteColor,
-                                    fontWeight: FontWeight.bold,
-                                    fontStyle: FontStyle.italic),
-                              ))
+                          margin: const EdgeInsets.all(5),
+                          padding: const EdgeInsets.all(2),
+                          decoration: customDecoration(
+                            radius: 4,
+                            color: ColorResource.primaryColor,
+                          ),
+                          child: Text(
+                            textAlign: TextAlign.start,
+                            maxLines: 10,
+                            overflow: TextOverflow.ellipsis,
+                            widget._product.videoUrl.toString(),
+                            style: const TextStyle(
+                                letterSpacing: 0.1,
+                                fontSize: 13,
+                                color: ColorResource.whiteColor,
+                                fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic),
+                          ))
                           : const SizedBox.shrink(),
                       Container(
                         padding: const EdgeInsets.only(top: 25, left: 20, right: 20, bottom: 10),
@@ -429,12 +427,8 @@ class _ProductDetailViewState extends State<ProductDetailView> with SingleTicker
 
                       detailTap(),
                       widget._product.reviewsCount! > 0 ? reviewTap() : const SizedBox.shrink(),
-                      Container(
-                        width: MediaQuery.of(context).size.width,
-                        height: 8,
-                        color: ColorResource.lightHintTextColor,
-                      ),
-                                    /*Recommend Product*/
+
+                      /*Recommend Product*/
                       // Padding(
                       //   padding: const EdgeInsets.only(left: 10),
                       //   child: RecommendWidget(),
@@ -455,116 +449,116 @@ class _ProductDetailViewState extends State<ProductDetailView> with SingleTicker
                       ),
 
                       Get.find<ProductDetailController>().obx(
-                          (state) => Container(
+                              (state) => Container(
                             color: ColorResource.bgItemColor,
                             child: ProductItemGridView(Get.find<ProductDetailController>(),
                                 Get.find<ProductDetailController>().getProductList, scrollController, (val) {}),
                           ),
                           onLoading: productShimmerView(context),
                           onError: (s) => onErrorReloadButton(context, s.toString(), height: 300, onTap: () {
-                                Get.find<ProductDetailController>().getRelatedProduct(widget._product.id!);
-                              }),
+                            Get.find<ProductDetailController>().getRelatedProduct(widget._product.id!);
+                          }),
                           onEmpty: SizedBox(height: 298, child: notFound(context, 'empty_product'.tr)))
                     ],
                   ),
                 ),
               )
-                  // : Container(
-                  //     child: Center(
-                  //       child: CircularProgressIndicator(),
-                  //     ),
-                  //   ),
-                  ),
-              Container(
-                padding: const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
-                decoration: customDecorationOnly(
-                    shadowBlur: 1.5,
-                    offset: const Offset(1, -1.8),
-                    topLeft: 15,
-                    topRight: 15,
-                    color: ColorResource.whiteColor,
-                    shadowColor: ColorResource.lightGrayColor),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            // : Container(
+            //     child: Center(
+            //       child: CircularProgressIndicator(),
+            //     ),
+            //   ),
+          ),
+          Container(
+            padding: const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+            decoration: customDecorationOnly(
+                shadowBlur: 1.5,
+                offset: const Offset(1, -1.8),
+                topLeft: 15,
+                topRight: 15,
+                color: ColorResource.whiteColor,
+                shadowColor: ColorResource.lightGrayColor),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Wrap(
+                  direction: Axis.vertical,
                   children: [
-                    Wrap(
-                      direction: Axis.vertical,
-                      children: [
-                        textView15(context: context, text: "${"total".tr}:", maxLine: 1, fontWeight: FontWeight.w600),
-                        textView25(
-                            context: context,
-                            text: PriceConverter.convertPrice(
-                                context, double.parse(widget._product.unitPrice.toString()),
-                                discount: widget._product.discount!, discountType: widget._product.discountType!),
-                            color: ColorResource.primaryColor)
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        widget._product.interestRateStatus != 0
-                            ? Padding(
-                                padding: const EdgeInsets.only(right: 8.0),
-                                child: customImageButton(
-                                    padding: 10,
-                                    width: 80,
-                                    height: 50,
-                                    onTap: () => {
-                                          if (Get.find<AuthController>().isSignIn())
-                                            {
-                                              Get.to(InstallmentInfoView(widget._product.id.toString())),
-                                              Get.find<InstallmentViewController>()
-                                                  .addProductImg(widget._product.thumbnail.toString(), reset: true)
-                                            }
-                                          else
-                                            {signInDialogView(context)}
-                                        },
-                                    icon: Image.asset(
-                                      "assets/images/installments_ic.png",
-                                      width: 24,
-                                      height: 24,
-                                    ),
-                                    radius: 10,
-                                    color: ColorResource.primaryColor),
-                              )
-                            : const SizedBox.shrink(),
-                        customTextButton(
-                            onTap: () {
-                              customBottomSheetDialogWrap(
-                                padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10, top: 20),
-                                context: context,
-                                child: AddToCartView(
-                                  products: widget._product,
-                                  function: (val) {
-                                    if (!Get.find<AuthController>().isSignIn()) {
-                                      signInDialogView(context);
-                                    } else {
-                                      snackBarMessage(context, val, bgColor: Colors.green);
-                                    }
-                                  },
-                                ),
-                              );
-                            },
-                            text: Center(
-                              child: textView16(
-                                context: context,
-                                text: 'add_to_cart'.tr,
-                                fontWeight: FontWeight.w600,
-                                color: ColorResource.whiteColor,
-                              ),
-                            ),
-                            color: ColorResource.primaryColor,
-                            radius: 10,
-                            height: 50),
-                      ],
-                    )
+                    textView15(context: context, text: "${"total".tr}:", maxLine: 1, fontWeight: FontWeight.w600),
+                    textView25(
+                        context: context,
+                        text: PriceConverter.convertPrice(
+                            context, double.parse(widget._product.unitPrice.toString()),
+                            discount: widget._product.discount!, discountType: widget._product.discountType!),
+                        color: ColorResource.primaryColor)
                   ],
                 ),
-              )
-            ],
-          ), onRefresh: () async {
-          Get.find<ProductDetailController>().getRelatedProduct(widget._product.id!);
-        },
-        );
+                Row(
+                  children: [
+                    widget._product.interestRateStatus != 0
+                        ? Padding(
+                      padding: const EdgeInsets.only(right: 8.0),
+                      child: customImageButton(
+                          padding: 10,
+                          width: 80,
+                          height: 50,
+                          onTap: () => {
+                            if (Get.find<AuthController>().isSignIn())
+                              {
+                                Get.to(InstallmentInfoView(widget._product.id.toString())),
+                                Get.find<InstallmentViewController>()
+                                    .addProductImg(widget._product.thumbnail.toString(), reset: true)
+                              }
+                            else
+                              {signInDialogView(context)}
+                          },
+                          icon: Image.asset(
+                            "assets/images/installments_ic.png",
+                            width: 24,
+                            height: 24,
+                          ),
+                          radius: 10,
+                          color: ColorResource.primaryColor),
+                    )
+                        : const SizedBox.shrink(),
+                    customTextButton(
+                        onTap: () {
+                          customBottomSheetDialogWrap(
+                            padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10, top: 20),
+                            context: context,
+                            child: AddToCartView(
+                              products: widget._product,
+                              function: (val) {
+                                if (!Get.find<AuthController>().isSignIn()) {
+                                  signInDialogView(context);
+                                } else {
+                                  snackBarMessage(context, val, bgColor: Colors.green);
+                                }
+                              },
+                            ),
+                          );
+                        },
+                        text: Center(
+                          child: textView16(
+                            context: context,
+                            text: 'add_to_cart'.tr,
+                            fontWeight: FontWeight.w600,
+                            color: ColorResource.whiteColor,
+                          ),
+                        ),
+                        color: ColorResource.primaryColor,
+                        radius: 10,
+                        height: 50),
+                  ],
+                )
+              ],
+            ),
+          )
+        ],
+      ), onRefresh: () async {
+      Get.find<ProductDetailController>().getRelatedProduct(widget._product.id!);
+    },
+    );
 
 
   }
@@ -612,50 +606,51 @@ class _ProductDetailViewState extends State<ProductDetailView> with SingleTicker
           ),
 
           Obx(
-            () => Get.find<ShopProfileController>().getShopProfileModel.shop != null
+                () => Get.find<ShopProfileController>().getShopProfileModel.shop != null
                 ? Container(
-                    margin: const EdgeInsets.only(top: 10, bottom: 10),
-                    width: MediaQuery.of(context).size.width,
-                    child: Row(children: [
-                      customImageButton(
-                        padding: 0,
-                        width: 60,
-                        height: 60,
-                        onTap: () {
-                          if (Get.find<ShopProfileController>().getShopProfileModel.shop != null) {
-                            Get.to(ShopProfileView(Get.find<ShopProfileController>().getShopProfileModel));
-                          } else {
-                            Get.find<ShopProfileController>().getShopProfile(widget._product.userId.toString());
-                          }
-                        },
-                        icon:  FadeInImage.assetNetwork(
-                            placeholder: "assets/images/placeholder_img.png",
-                            fit: BoxFit.fitHeight,
-                            image:
-                                '${Get.find<ConfigController>().configModel.baseUrls?.baseShopImageUrl}/${Get.find<ShopProfileController>().getShopProfileModel.shop!.image!}',
-                            width: 60,
-                            height: 60,
-                            imageErrorBuilder: (c, o, s) => Image.asset(
-                              "assets/images/placeholder_img.png",
-                              fit: BoxFit.fitWidth,
-                              height: 60,
-                            ),
-                          ),
+              margin: const EdgeInsets.only(top: 10, bottom: 10),
+              width: MediaQuery.of(context).size.width,
+              child: Row(children: [
+                customImageButton(
+                  padding: 0,
+                  width: 60,
+                  height: 60,
+                  onTap: () {
+                    if (Get.find<ShopProfileController>().getShopProfileModel.shop != null) {
+                      Get.to(ShopProfileView(Get.find<ShopProfileController>().getShopProfileModel));
+                    } else {
+                      Get.find<ShopProfileController>().getShopProfile(widget._product.userId.toString());
+                    }
+                  },
+                  icon:  FadeInImage.assetNetwork(
+                    placeholder: "assets/images/placeholder_img.png",
+                    fit: BoxFit.fitHeight,
+                    image:
+                    '${Get.find<ConfigController>().configModel.baseUrls?.baseShopImageUrl}/${Get.find<ShopProfileController>().getShopProfileModel.shop!.image!}',
+                    width: 60,
+                    height: 60,
+                    imageErrorBuilder: (c, o, s) => Image.asset(
+                      "assets/images/placeholder_img.png",
+                      fit: BoxFit.fitWidth,
+                      height: 60,
+                    ),
+                  ),
 
-                      ),
-                      const SizedBox(
-                        width: 20,
-                      ),
-                      Expanded(
-                          child: textView16(
-                              context: context,
-                              text: Get.find<ShopProfileController>().getShopProfileModel.shop!.name!,
-                              maxLine: 2,
-                              color: ColorResource.darkTextColor))
-                    ]),
-                  )
+                ),
+                const SizedBox(
+                  width: 20,
+                ),
+                Expanded(
+                    child: textView16(
+                        context: context,
+                        text: Get.find<ShopProfileController>().getShopProfileModel.shop!.name!,
+                        maxLine: 2,
+                        color: ColorResource.darkTextColor))
+              ]),
+            )
                 : const SizedBox.shrink(),
           ),
+
           Padding(
             padding: const EdgeInsets.all(5),
             child: textView16(
@@ -665,28 +660,31 @@ class _ProductDetailViewState extends State<ProductDetailView> with SingleTicker
                 color: ColorResource.darkTextColor),
           ),
 
+
           Stack(children: [
             widget._product.metaDescription == null
                 ? Html(
-                    style: {
-                      "body": Style(
-                        backgroundColor: Colors.white,
-                        fontSize: FontSize(16.0),
-                        maxLines: 10,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    },
-                    data: widget._product.details ?? "empty_description".tr,
-                    shrinkWrap: true,
-                  )
-                : textView15(
-                    context: context,
-                    color: ColorResource.lightTextColor,
-                    fontWeight: FontWeight.w500,
-                    height: 1.2,
-                    text: widget._product.metaDescription.toString(),
-                    maxLine: 10,
-                  ),
+              style: {
+                "body": Style(
+                  backgroundColor: Colors.white,
+                  fontSize: FontSize(16.0),
+                  maxLines: 10,
+                  fontWeight: FontWeight.w500,
+                ),
+              },
+              data: widget._product.details ?? "empty_description".tr,
+              shrinkWrap: true,
+            ) : Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: textView15(
+                context: context,
+                color: ColorResource.lightTextColor,
+                fontWeight: FontWeight.w500,
+                height: 1.2,
+                text: widget._product.metaDescription.toString(),
+
+              ),
+            ),
             // Container(
             //   decoration: BoxDecoration(
             //       color: Colors.white,
@@ -756,21 +754,21 @@ class _ProductDetailViewState extends State<ProductDetailView> with SingleTicker
                     color: ColorResource.darkTextColor),
               ),
               Get.find<ReviewItemController>().obx(
-                  (state) =>
+                      (state) =>
                       ReviewItemView(Get.find<ReviewItemController>().getReviewModel, scrollController, (val) {}),
                   onError: (s) => onErrorReloadButton(
-                        context,
-                        s.toString(),
-                        height: 198,
-                        onTap: () {
-                          Get.find<ReviewItemController>().getAllReviewProduct(widget._product.id!);
-                        },
-                      ),
+                    context,
+                    s.toString(),
+                    height: 198,
+                    onTap: () {
+                      Get.find<ReviewItemController>().getAllReviewProduct(widget._product.id!);
+                    },
+                  ),
                   onEmpty: Container(
                       alignment: Alignment.center,
                       height: 198,
                       child:
-                          textView16(color: ColorResource.lightTextColor, text: 'empty_review'.tr, context: context))),
+                      textView16(color: ColorResource.lightTextColor, text: 'empty_review'.tr, context: context))),
               // Padding(
               //   padding: const EdgeInsets.only(left: 40, right: 40, top: 20),
               //   child: CustomTextButton(

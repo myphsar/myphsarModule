@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:get/get.dart';
 import 'package:myphsar/base_controller.dart';
 import 'package:myphsar/base_provider.dart';
@@ -10,59 +12,64 @@ class SellerController extends BaseController {
   SellerController(this._baseProvider);
 
   final _allSellerModel = <SellerModel>[].obs;
-  final _searchAllSellerModel = <SellerModel>[].obs;
+  final _sellerItemModel = <SellerModel>[].obs;
 
-  List<SellerModel> get getAllSellerModel => _allSellerModel;
-
-  List<SellerModel> get getAllSearchSellerModel => _searchAllSellerModel;
-
-  bool willPopStatus(Function callback) {
-    if (_allSellerModel.length == _searchAllSellerModel.length) {
-      return true;
-    } else {
-      resetSearch();
-      callback();
-      return false;
-    }
-  }
-
-  void resetSearch() {
-    _searchAllSellerModel.clear();
-    _searchAllSellerModel.addAll(_allSellerModel);
-    notifySuccessResponse(_searchAllSellerModel.length);
-  }
+  List<SellerModel> get getSellerItemModel => _sellerItemModel;
 
   void searchShop(String keySearch) {
     var search = keySearch.toLowerCase();
-    _searchAllSellerModel.clear();
+    _sellerItemModel.clear();
+
     if (keySearch.isEmpty) {
-      _searchAllSellerModel.addAll(_allSellerModel);
+      _sellerItemModel.addAll(_allSellerModel);
       return;
     }
 
     for (var product in _allSellerModel) {
       if (product.name!.toLowerCase().contains(search)) {
-        _searchAllSellerModel.add(product);
-        notifySuccessResponse(_searchAllSellerModel.length);
-      } else {
-        notifySuccessResponse(_searchAllSellerModel.length);
+        _sellerItemModel.add(product);
       }
     }
+    notifySuccessResponse(_allSellerModel.length);
+  }
+
+  List<int> shuffleNumbers(int min, int max) {
+    final List<int> numbers = List<int>.generate(max - min + 1, (i) => min + i);
+    final Random random = Random();
+
+    for (int i = numbers.length - 1; i > 0; i--) {
+      int j = random.nextInt(i + 1);
+      // Swap elements
+      int temp = numbers[i];
+      numbers[i] = numbers[j];
+      numbers[j] = temp;
+    }
+    return numbers;
+  }
+
+  Future radomSeller(List<SellerModel> sellerModel) async{
+
+    shuffleNumbers(0, sellerModel.length-1).forEach((index){
+      _allSellerModel.add(sellerModel[index]);
+    });
+    _sellerItemModel.addAll(_allSellerModel);
   }
 
   Future getAllSeller() async {
+    List<SellerModel>  allSellerList = [];
     change(true, status: RxStatus.loading());
-    await _baseProvider.getAllSellerApiProvider().then((value) => {
-          if (value.statusCode == 200)
-            {
-              value.body.forEach((value) => {
-                    _allSellerModel.add(SellerModel.fromJson(value)),
-                    _searchAllSellerModel.add(SellerModel.fromJson(value))
-                  }),
-              notifySuccessResponse(_allSellerModel.length)
-            }
-          else
-            {notifyErrorResponse("Error Code: ${value.statusCode}\n${value.statusText}")}
-        });
+    await _baseProvider.getAllSellerApiProvider().then((value) async => {
+      if (value.statusCode == 200)
+        {
+          value.body.forEach((value) => {
+            allSellerList.add(SellerModel.fromJson(value)),
+          }),
+
+          await radomSeller(allSellerList),
+          notifySuccessResponse(allSellerList.length)
+        }
+      else
+        {notifyErrorResponse("${value.statusCode}\n${value.statusText}")}
+    });
   }
 }

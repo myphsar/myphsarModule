@@ -26,18 +26,20 @@ import 'welcome/welcome_view.dart';
 
 Future<void> main() async {
 	WidgetsFlutterBinding.ensureInitialized();
-	// await Firebase.initializeApp(name: "MyPhar");
-	// Request permission
-	// await FirebaseMessaging.instance.setForegroundNotificationPresentationOptions(
-	// 	alert: true,
-	// 	badge: true,
-	// 	sound: true,
-	// );
 
-	// await PushNotification.initialize();
 	 await DependencyBinding("https://myphsar.com").dependencies();
-	// await DependencyBinding("https://myphsar.com").dependencies();
-	// await Get.find<ConfigController>().getConfigModel();
+
+
+	runApp(
+		const MyApp(),
+	);
+}
+
+@pragma('vm:entry-point')
+Future<void> myPhsarEntryPoint() async {
+	WidgetsFlutterBinding.ensureInitialized();
+
+	await DependencyBinding("https://myphsar.com").dependencies();
 
 	runApp(
 		const MyApp(),

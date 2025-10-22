@@ -90,7 +90,7 @@ class _SellerItemWidgetState extends State<SellerItemWidget> {
                 placeholder: "assets/images/placeholder_img.png",
                 fit: BoxFit.contain,
                 image:
-                    '${Get.find<ConfigController>().configModel.baseUrls?.baseShopImageUrl}/${widget.allSellerModel.image!}',
+                '${Get.find<ConfigController>().configModel.baseUrls?.baseShopImageUrl}/${widget.allSellerModel.image!}',
                 width: 80,
                 height: 80,
                 imageErrorBuilder: (c, o, s) => Image.asset(
@@ -105,50 +105,50 @@ class _SellerItemWidgetState extends State<SellerItemWidget> {
               Expanded(
                   child: SizedBox(
 
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    textView14(
-                        context: context,
-                        fontWeight: FontWeight.w700,
-                        text: widget.allSellerModel.name!,
-                        maxLine: 2,
-                        height: 1.5),
-                    customImageTextButton(
-                      leftPadding: 0,
-                      blur: 0,
-                      padding: 0,
-                      height: 25,
-                      icon: Image.asset("assets/images/phone_ic.png", color: Colors.blue, height: 13,width: 15,),
-                      text: textView13(
-                          context: context,
-                          fontWeight: FontWeight.w500,
-                          text: formatNumber(int.tryParse(widget.allSellerModel.contact.toString())!),
-                          maxLine: 2,
-                          color: ColorResource.lightTextColor),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        textView14(
+                            context: context,
+                            fontWeight: FontWeight.w700,
+                            text: widget.allSellerModel.name!,
+                            maxLine: 2,
+                            height: 1.5),
+                        customImageTextButton(
+                          leftPadding: 0,
+                          blur: 0,
+                          padding: 0,
+                          height: 25,
+                          icon: Image.asset("assets/images/phone_ic.png", color: Colors.blue, height: 13,width: 15,),
+                          text: textView13(
+                              context: context,
+                              fontWeight: FontWeight.w500,
+                              text: formatNumber(int.tryParse(widget.allSellerModel.contact.toString())!),
+                              maxLine: 2,
+                              color: ColorResource.lightTextColor),
+                        ),
+                        customImageTextButton(
+                          leftPadding: 0,
+                          blur: 0,
+                          padding: 0,
+                          height: 25,
+                          icon: Image.asset(
+                            "assets/images/email_ic.png",
+                            color: ColorResource.primaryColor,
+                            height: 12,
+                            width: 15,
+                          ),
+                          text: textView13(
+                              context: context,
+                              fontWeight: FontWeight.w500,
+                              text: widget.allSellerModel.email!,
+                              maxLine: 2,
+                              color: ColorResource.lightTextColor),
+                        )
+                      ],
                     ),
-                    customImageTextButton(
-                      leftPadding: 0,
-                      blur: 0,
-                      padding: 0,
-                      height: 25,
-                      icon: Image.asset(
-                        "assets/images/email_ic.png",
-                        color: ColorResource.primaryColor,
-                        height: 12,
-                        width: 15,
-                      ),
-                      text: textView13(
-                          context: context,
-                          fontWeight: FontWeight.w500,
-                          text: widget.allSellerModel.email!,
-                          maxLine: 2,
-                          color: ColorResource.lightTextColor),
-                    )
-                  ],
-                ),
-              ))
+                  ))
             ]),
           ),
         ]),
