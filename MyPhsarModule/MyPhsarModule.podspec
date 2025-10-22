@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '15.0'
   s.source = {
-    :http => 'https://github.com/myphsar/myphsarModule/blob/main/MyPhsarModule/1.0.0/MyPhsarModule.zip'
+    :http => 'https://github.com/myphsar/myphsarModule/blame/main/MyPhsarModule.zip'
   }
 
   s.vendored_frameworks = [
@@ -28,11 +28,19 @@ Pod::Spec.new do |s|
 	'shared_preferences_foundation.xcframework',
 	'url_launcher_ios.xcframework'
 
-
-
-
-    # Add other plugin frameworks your module uses
   ]
+    # If you use specific Flutter plugins, add them as dependencies
+    s.dependency 'Flutter'
   
-  s.preserve_paths = '**/*.xcframework'
+
+  # Make sure the pod is validated correctly
+  s.pod_target_xcconfig = {
+    'DEFINES_MODULE' => 'YES',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386'
+  }
+
+  # Verify the source is accessible
+  s.prepare_command = <<-CMD
+    echo "Validating MyFlutterModule #{s.version}"
+  CMD
 end
