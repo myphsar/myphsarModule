@@ -11,9 +11,9 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '15.0'
   s.source = {
-    :git =>  'https://github.com/myphsar/myphsarModule.git',:tag => s.version.to_s
+    :http => 'https://your-repo.com/flutter-modules/MyFlutterModule/1.0.0/MyFlutterModule.zip'
   }
-  
+
   s.vendored_frameworks = [
       'Flutter.xcframework',
       'App.xcframework',
@@ -27,7 +27,12 @@ Pod::Spec.new do |s|
 	'share_plus.xcframework',
 	'shared_preferences_foundation.xcframework',
 	'url_launcher_ios.xcframework'
+
+
+
+
+    # Add other plugin frameworks your module uses
   ]
   
-  # s.preserve_paths = '**/*.xcframework'
+  s.preserve_paths = '**/*.xcframework'
 end
