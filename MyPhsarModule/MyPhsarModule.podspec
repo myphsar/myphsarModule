@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '15.0'
   s.source           = { 
-    :http => 'https://your-repo.com/flutter-modules/MyFlutterModule/1.0.0/MyFlutterModule.zip'
+    :http => 'https://github.com/myphsar/myphsarModule/tree/main/MyPhsarModule/1.0.0/MyPhsarModule.zip'
   }
   
   s.vendored_frameworks = [
