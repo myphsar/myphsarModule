@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MyPhsarModule'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'A Flutter module for iOS'
   s.description      = <<-DESC
   This module provides Flutter functionality to native iOS apps.
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '15.0'
   s.source = {
-    :http => 'https://github.com/myphsar/myphsarModule/blame/main/MyPhsarModule.zip'
+    :http => 'https://github.com/myphsar/myphsarModule/releases/tag/1.1.0/MyPhsarModule.zip'
   }
 
   s.vendored_frameworks = [
@@ -36,7 +36,8 @@ Pod::Spec.new do |s|
   # Make sure the pod is validated correctly
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386'
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386',
+
   }
 
   # Verify the source is accessible
